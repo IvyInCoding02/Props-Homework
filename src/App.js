@@ -1,25 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import Hello from './components/hello/Hello';
+import Hobby from './components/hobbies/Hobby';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Welcoming Sentence</h1>
+      <Hello name="Aibiike" age="45"/>
+      <Hobby hobby="swimming and reading"/>
+      <Hello name="Arsen" age="25"/>
+      <Hobby hobby="writing and running"/>
+      <Hello name="Kamila" age="18" />
+      <Hobby hobby="coding and playing guitar"/>
     </div>
   );
 }
 
 export default App;
+ 
+
+// CTRl + K + F
+//Feature Slice 
